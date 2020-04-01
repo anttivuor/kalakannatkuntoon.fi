@@ -1,0 +1,55 @@
+.image-section {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: calc(100% - 2 * 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.image-section.left {
+  align-items: flex-start;
+}
+
+.image-section.right {
+  align-items: flex-end;
+}
+
+.card h1 {
+  font-family: "Montserrat";
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card p {
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  width: 40%;
+  min-width: 300px;
+  max-width: 90vw;
+  text-align: center;
+  height: 400px;
+  max-height: calc(100vh - 70px);
+  padding: 10px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  .image-section {
+    padding: 0 25px;
+    width: calc(100vw - 2 * 25px);
+  }
+
+  .card {
+    width: calc(100% - 2 * 10px);
+  }
+}

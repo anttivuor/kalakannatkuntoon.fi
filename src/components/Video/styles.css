@@ -1,0 +1,15 @@
+.video {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  background-color: lightblue;
+}
+
+.video video {
+  width: 100vw;
+  max-width: calc((100vh - 70px) * (16 / 9));
+  max-height: calc(100vh - 70px);
+}

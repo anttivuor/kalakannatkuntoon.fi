@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 2 * 20px);
+  padding: 10px 20px;
+  background-color: white;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+.header > div {
+  margin: 0 10px;
+  color: #005580;
+  text-decoration: none;
+}
+
+.header > div:hover {
+  cursor: pointer;
+  color: #04334b;
+}
+
+.header > img {
+  max-height: 50px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 13px;
+  }
+}

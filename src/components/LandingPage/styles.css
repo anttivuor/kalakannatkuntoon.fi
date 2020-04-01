@@ -1,0 +1,16 @@
+.landing-page {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(white, white, lightblue);
+}
+
+.landing-page h1 {
+  color: #005580;
+  font-family: Montserrat;
+  font-weight: normal;
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  margin-top: -50px;
+}
