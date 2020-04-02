@@ -10,7 +10,7 @@ class Header extends PureComponent {
       <div className={"header"}>
         <div onClick={() => this.onClick(5)}>Mitä voin tehdä?</div>
         <div onClick={() => this.onClick(6)}>Lahjoita</div>
-        <img src={"./images/logo.png"} className={"logo"} alt={"Fish logo"} />
+        <img onClick={() => this.onClick(1)} src={"./images/logo.png"} className={"logo"} alt={"Fish logo"} />
         <div onClick={() => this.onClick(4)}>Faktat tiskiin</div>
         <div onClick={() => this.onClick(7)}>Ota yhteyttä</div>
       </div>

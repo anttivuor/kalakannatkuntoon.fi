@@ -35,3 +35,11 @@
     font-size: 13px;
   }
 }
+
+img {
+  cursor: pointer;
+}
+
+img:hover {
+  opacity: 0.8;
+}
