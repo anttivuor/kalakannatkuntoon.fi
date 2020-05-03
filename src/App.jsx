@@ -36,7 +36,7 @@ class App extends Component {
             return (
               <div className="App" id="fullpage-wrapper">
                 <div className="section">
-                  <LandingPage />
+                  <LandingPage fullpage={this.fullpage}/>
                 </div>
                 <div className="section">
                   <Video currentScreen={currentScreen} />
