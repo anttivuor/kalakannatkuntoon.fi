@@ -6,7 +6,6 @@ import Typing from 'react-typing-animation';
 //lisätään myös nuoli alaspäin, jolla voi klikata seuraavaan osioon ja häviää kun scrollaa alaspäin
 
 
-
 class LandingPage extends Component {
 
 
