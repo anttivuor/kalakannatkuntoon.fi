@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./styles.css";
 
+//renders a card for each element of the page. used for making each page similar
+
 class ImageSection extends Component {
   render() {
     const {

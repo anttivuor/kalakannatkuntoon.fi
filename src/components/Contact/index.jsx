@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ImageSection from "../ImageSection";
 
+//lisää nappi, mistä avautuu ponnahdusikkuna yhteydenottoa varten (ei varmaa tarvitse tehä bäkkäriä, mutta yhteydenotto lähtee kuvitteelisesti)
+//lisätään myös sosiaalisen median linkit tähän, ehkä myös etusivulla headeriin tai jtn?
+
 class Contact extends Component {
   render() {
     return (

@@ -1,8 +1,16 @@
 import React, { PureComponent } from "react";
-
 import "./styles.css";
 
+//lisätään tänne somelinkit?
+
+
+//component used for rendering the header of the page
+
 class Header extends PureComponent {
+  
+  //method for moving through the page using the header.
+  //receives through props the method for moving and is given the index
+
   onClick = index => this.props.fullpage.fullpageApi.moveTo(index);
 
   render() {

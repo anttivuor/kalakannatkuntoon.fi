@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import ImageSection from "../ImageSection";
 
+//lisätään tänne kohta, jossa käyttäjän mennessä ensimäistä kertaa tähän osioon näkyy osiossa, jossa on lahjoittajien määrä ja lahjoitettu summa,
+//niin ne kasvavat hidastuvalla nopeudella lopullisiin lukuihin
+//lisätään myös slideri jossa voi valita lahjoitettavan rahan määrä sekä nappi joka vie verkkopankkiosioon leikisti
+
 class Donation extends Component {
   render() {
     return (
