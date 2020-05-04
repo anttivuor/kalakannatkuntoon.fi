@@ -12,22 +12,34 @@ class Header extends PureComponent {
     super(props)
 
     this.state = {
-      open: false
+      open: false,
+      width: window.innerWidth
     }
   }
 
-  //method for moving through the page using the header.
-  //receives through props the method for moving and is given the index
+  componentDidMount = () => {
+    window.addEventListener('resize', this.updateDimensions)
+  }
 
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateDimensions)
+  }
+
+  // Update dimensions on window resize. This makes sure that navigation will be updated correctly
+  updateDimensions = () => this.setState({ width: window.innerWidth })
+
+  // Method for moving through the page using the header.
+  // Receives through props the method for moving and is given the index
   onClick = index => {
-    if (this.state.open) this.setState({ open: false })
-    this.props.fullpage.fullpageApi.moveTo(index);
+    if (this.state.open) this.setState({ open: false }) // If mobile navigation is open --> close it
+    this.props.fullpage.fullpageApi.moveTo(index)
   }
 
   render() {
-    const { open } = this.state
+    const { open, width } = this.state
+
     // Different navigation for mobile
-    if (window.innerWidth < 500) {
+    if (width < 515) {
       return (
         <div className={`header-mobile ${open ? 'visible' : 'hidden'}`}>
           <div>
