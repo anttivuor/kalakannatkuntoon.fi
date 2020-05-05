@@ -1,0 +1,129 @@
+.xx {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: calc(100% - 2 * 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    align-items: flex-end;
+  }
+  
+  .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  .kortti h1 {
+    font-family: "Montserrat";
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-family: 'Montserrat';
+  }
+  
+  .kortti p {
+    width: 100%;
+    font-family: "Montserrat";
+  }
+  
+  .kortti {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 40%;
+    min-width: 300px;
+    max-width: 90vw;
+    text-align: center;
+    height: 400px;
+    max-height: calc(100vh - 70px);
+    padding: 10px;
+    opacity: 0.8;
+    justify-content: space-around;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .image-section {
+      padding: 0 25px;
+      width: calc(100vw - 2 * 25px);
+    }
+  
+    .kortti {
+      width: calc(100% - 2 * 10px);
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .kortti {
+      width: calc(100vh - 20px);
+    }
+  }
+
+  .icons {
+      display: flex;
+      flex-direction: column;
+      vertical-align: center;
+  }
+
+  .contact {
+      border-radius: 1em;
+      border: 1px solid black;
+      font-family: 'Montserrat';
+      
+  }
+  .contact p {
+    font-size: 30px;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    text-decoration-line: none;
+    font-family: 'Montserrat';
+    color: black;
+  }
+
+  .icontext {
+    margin-left: -100px;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #005580;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    opacity: 0.7;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  
+
+ 
