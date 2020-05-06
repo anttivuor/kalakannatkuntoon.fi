@@ -1,17 +1,17 @@
 import "./styles.css";
 
-import React, { Component } from "react";
+import React from "react";
 import Modal from 'react-modal';
 import photo from "./4.jpg"
 
 function Contact() {
-  const [modalIsOpen,setIsOpen] = React.useState(false);
+  const [modalIsOpen,setOpen] = React.useState(false);
   function openModal() {
-    setIsOpen(true);
+    setOpen(true);
   }
  
   function closeModal(){
-    setIsOpen(false);
+    setOpen(false);
   }
  
     return (
@@ -19,10 +19,13 @@ function Contact() {
           <section className={'container'}>
             <div className={"kortti"}>
               <h1>ota yhteyttä</h1>
+              <div className="icon-container">
               <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
               <div className="icons">
-                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img style= {{width: "50px", height: "50px"}}className={"instagram"} src="./images/icon.png" alt="instagram"></img><p className={"icontext"}>@kalakannatkuntoon</p></a>
-                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img style= {{width: "50px", height: "50px" }}className={"instagram"} src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" alt="facebook"></img><p className={"icontext"}>#kalakannatkuntoon</p></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img src="./images/icon.png" alt="instagram"></img></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" alt="facebook"></img></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" alt="twitter"></img></a>
+              </div>
               </div>
               <div className={"contact"} onClick={openModal}>
               <p>Ota yhteyttä</p>

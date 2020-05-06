@@ -19,7 +19,7 @@ render() {
   return (
     <>
     <section
-    className={`image-section left`}
+    className={`image-section`}
     style={{ backgroundImage: `url(${photo})`}}
   >
     <div className={"kortti"}>
