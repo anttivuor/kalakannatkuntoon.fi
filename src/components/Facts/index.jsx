@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./styles.css"
 import photo from "./1.jpg"
-import Modal from "../Modal"
+import Modal from 'react-modal';
 
 class Facts extends Component {
   
@@ -18,15 +18,6 @@ render() {
 
   return (
     <>
-     <Modal visible={modal1} closeModal={() => this.setState({ modal1: false })}>
-    Pointti 1
-    </Modal>
-    <Modal visible={modal2} closeModal={() => this.setState({ modal2: false })}>
-    Pointti 2
-    </Modal>
-    <Modal visible={modal3} closeModal={() => this.setState({ modal3: false })}>
-    Pointti 3
-    </Modal>
     <section
     className={`image-section left`}
     style={{ backgroundImage: `url(${photo})`}}
@@ -52,6 +43,15 @@ render() {
     </ul>
     </div>
     </section>
+    <Modal className="Modal" overlayClassName="Overlay" isOpen={modal1} onRequestClose={() => this.setState({ modal1: false })}>
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
+    </Modal>
+    <Modal className="Modal" overlayClassName="Overlay" isOpen={modal2} onRequestClose={() => this.setState({ modal2: false })}>
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
+    </Modal>
+    <Modal className="Modal" overlayClassName="Overlay" isOpen={modal3} onRequestClose={() => this.setState({ modal3: false })}>
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
+    </Modal>
   </>
   );
 }
