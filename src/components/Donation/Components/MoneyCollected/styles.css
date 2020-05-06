@@ -1,0 +1,50 @@
+.money-collected {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.money-collected-progress {
+    height: 200px;
+    width: 200px;
+}
+
+.money-collected-progress p {
+    color: #333333;
+    text-align: center;
+    margin: 0;
+}
+
+.money-collected-progress p:first-child {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.money-collected-progress p:last-child {
+    font-size: 24px;
+}
+
+.donate {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.donate > p {
+    margin-top: 0;
+}
+
+.donate > div:last-child {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #005580;
+    color: #005580;
+    border-radius: 4px;
+}
+
+.donate > div:last-child:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}

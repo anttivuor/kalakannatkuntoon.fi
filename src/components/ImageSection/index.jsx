@@ -1,5 +1,6 @@
-import React, { Component } from "react";
 import "./styles.css";
+
+import React, { Component } from "react";
 
 //renders a card for each element of the page. used for making each page similar
 
@@ -19,8 +20,9 @@ class ImageSection extends Component {
         id={id}
       >
         <div className={"card"}>
-          <h1>{title}</h1>
-          <p>{description}</p>
+          { title && <h1>{title}</h1> }
+          { description && <p>{description}</p> }
+          {this.props.children}
         </div>
       </section>
     );
