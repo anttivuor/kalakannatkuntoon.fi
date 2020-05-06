@@ -1,23 +1,37 @@
-import React, { Component } from 'react'
-
+import React, {useState, useEffect } from 'react'
+import axios from 'axios'
 import ImageSection from '../ImageSection'
 import MoneyCollected from './Components/MoneyCollected'
+
+const URL = 'http://localhost:3001/api/money/5eb2e0a491e3e01590e9b9ce'
 
 //lisätään tänne kohta, jossa käyttäjän mennessä ensimäistä kertaa tähän osioon näkyy osiossa, jossa on lahjoittajien määrä ja lahjoitettu summa,
 //niin ne kasvavat hidastuvalla nopeudella lopullisiin lukuihin
 //lisätään myös slideri jossa voi valita lahjoitettavan rahan määrä sekä nappi joka vie verkkopankkiosioon leikisti
 
-class Donation extends Component {
-  constructor(props) {
-    super(props)
 
-    this.state = {
-      // Increase the amount of collected money linearly (goal is 10 000 €)
-      moneyCollected: Math.round((31 * 24 * 60 * 60 * 1000 - (new Date('2020-05-31').getTime() - new Date().getTime())) / (31 * 24 * 60 * 60 * 1000) * 10000)
-    }
+const Donation = () => {
+    const [ moneyCollected, setMoney ] = useState('')
+    const [old, setOld] = useState('')
+
+    useEffect(() => {
+      axios.get(URL).then(response => response.data)
+        .then(initialPeople => {
+          setMoney(initialPeople.number)
+          setOld(initialPeople.number)
+        })
+      }, [])   
+
+  const handleMoneyChange = (money) => {
+     
+  const updatedMoney = {
+    number: money + Number(old)
   }
-  render() {
-    const { moneyCollected } = this.state
+  
+  axios.put(URL, updatedMoney)
+  setMoney(updatedMoney.number)
+  setOld(updatedMoney.number)
+}  
 
     return (
       <ImageSection
@@ -28,10 +42,10 @@ class Donation extends Component {
         backgroundImage={'./images/3.jpg'}
         cardAlignment={'left'}
       >
-        <MoneyCollected amount={moneyCollected} />
+        <MoneyCollected amount={moneyCollected} handleMoneyChange={handleMoneyChange} />
       </ImageSection>
     )
   }
-}
+
 
 export default Donation;

@@ -8,7 +8,7 @@ import Slider from 'rc-slider';
 import React, { useState } from 'react'
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar'
 
-const MoneyCollected = ({ amount }) => {
+const MoneyCollected = ({ amount, handleMoneyChange }) => {
     const [donationAmount, changeDonationAmount] = useState(10)
     return (
         <div className={'money-collected'}>
@@ -44,7 +44,7 @@ const MoneyCollected = ({ amount }) => {
                     railStyle={{ height: 10, backgroundColor: 'rgba(0, 0, 0, 0.25)' }}
                     handleStyle={{ height: 18, width: 18, borderRadius: 9, backgroundColor: 'white', borderColor: '#005580' }}
                 />
-                <div onClick={() => window.open('https://www.mobilepay.fi/')}>
+                <div onClick={() => handleMoneyChange(donationAmount)}>
                     Lahjoita {donationAmount} €
                 </div>
             </div>

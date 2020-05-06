@@ -6,6 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "@fullpage/react-fullpage": "0.1.17",
+    "axios": "^0.19.2",
     "classnames": "^2.2.6",
     "rc-slider": "^9.2.4",
     "react": "16.12.0",
