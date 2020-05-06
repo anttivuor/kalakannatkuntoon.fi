@@ -42,16 +42,16 @@ class Contact extends Component {
         >
           <section className={'container'}>
             <div className={"contact"}
-              style={{marginTop: "150px", backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', padding: "10px" }}
+              style={{marginTop: "50px", backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', padding: "10px" }}
               onClick={() => this.setState({ modal: true })}>
               <p>Ota yhteyttä</p>
             </div>
-            <div className={"kortti"}>
+            <div className={"card"}>
               <h1>ota yhteyttä</h1>
-              <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"</p>
+              <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
               <div className="icons">
-                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img style= {{width: "10%", height: "10%"}}className={"instagram"} src="./images/icon.png" alt="instagram"></img><p className={"icontext"}>@kalakannatkuntoon</p></a>
-                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img style= {{width: "10%", height: "10%" }}className={"instagram"} src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" alt="facebook"></img><p className={"icontext"}>#kalakannatkuntoon</p></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img style= {{width: "50px", height: "50px"}}className={"instagram"} src="./images/icon.png" alt="instagram"></img><p className={"icontext"}>@kalakannatkuntoon</p></a>
+                <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img style= {{width: "50px", height: "50px" }}className={"instagram"} src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" alt="facebook"></img><p className={"icontext"}>#kalakannatkuntoon</p></a>
               </div>
             </div>
           </section>

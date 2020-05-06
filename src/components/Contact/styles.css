@@ -15,6 +15,12 @@
       flex-direction: row;
       justify-content: space-between;
   }
+
+  @media screen and (max-width: 500px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
   
   .kortti h1 {
     font-family: "Montserrat";
@@ -59,7 +65,12 @@
   
   @media screen and (max-width: 400px) {
     .kortti {
-      width: calc(100vh - 20px);
+      width: 95%;
+      min-width: 200px;
+    }
+    .card {
+      width: 95%;
+      min-width: 200px;
     }
   }
 
@@ -73,10 +84,11 @@
       border-radius: 1em;
       border: 1px solid black;
       font-family: 'Montserrat';
-      
+      height: 100px;
+      margin-top: 200px
   }
   .contact p {
-    font-size: 30px;
+    font-size: 20px
   }
 
   a {
@@ -86,10 +98,6 @@
     text-decoration-line: none;
     font-family: 'Montserrat';
     color: black;
-  }
-
-  .icontext {
-    margin-left: -100px;
   }
 
   input[type=text], select, textarea {

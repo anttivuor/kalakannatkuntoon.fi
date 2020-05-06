@@ -34,6 +34,7 @@
     max-height: 500px;
     padding: 20px;
     cursor: default;
+    margin-top: 20px
 }
 
 .modal > .close-modal {
@@ -53,3 +54,32 @@
     cursor: pointer;
     color: rgba(0, 0, 0, 0.75)
 }
+
+@media screen and (max-width: 1450px) {
+    .modal {
+        margin-top: 50px;
+        height: 600px
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .modal {
+        margin-top: 50px;
+        height: 500px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .modal {
+        margin-top: 50px;
+        height: 460px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modal {
+        margin-top: 50px;
+        height: 460px
+    }
+}
+

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Modal = (props) => (
-    <div className={`modal-container ${props.visible ? 'visible' : 'hidden'}`} onClick={props.closeModal}>
+    <div className={`modal-container ${props.visible ? 'visible' : 'hidden'}`}>
         <div className={'modal'}>
             <div className={'close-modal'} onClick={props.closeModal}>×</div>
             {props.children}
