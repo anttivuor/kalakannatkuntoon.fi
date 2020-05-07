@@ -53,7 +53,7 @@ const MoneyCollected = ({ amount, handleMoneyChange }) => {
 }
 
 MoneyCollected.propTypes = {
-    amount: PropTypes.number.isRequired
+    amount: PropTypes.string.isRequired
 }
 
 export default MoneyCollected
