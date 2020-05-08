@@ -1,5 +1,6 @@
-import React, {useState, useEffect } from 'react'
 import axios from 'axios'
+import React, {useEffect, useState} from 'react'
+
 import ImageSection from '../ImageSection'
 import MoneyCollected from './Components/MoneyCollected'
 
@@ -11,7 +12,7 @@ const URL = 'http://localhost:3001/api/money/5eb2e0a491e3e01590e9b9ce'
 
 
 const Donation = () => {
-    const [ moneyCollected, setMoney ] = useState('')
+    const [moneyCollected, setMoney] = useState('')
     const [old, setOld] = useState('')
 
     useEffect(() => {
@@ -20,18 +21,18 @@ const Donation = () => {
           setMoney(initialPeople.number)
           setOld(initialPeople.number)
         })
-      }, [])   
+      }, [])
 
-  const handleMoneyChange = (money) => {
-     
-  const updatedMoney = {
-    number: money + Number(old)
-  }
-  
-  axios.put(URL, updatedMoney)
-  setMoney(updatedMoney.number)
-  setOld(updatedMoney.number)
-}  
+    const handleMoneyChange = (money) => {
+
+      const updatedMoney = {
+        number: money + Number(old)
+      }
+
+      axios.put(URL, updatedMoney)
+      setMoney(updatedMoney.number)
+      setOld(updatedMoney.number)
+    }
 
     return (
       <ImageSection
