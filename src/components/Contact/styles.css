@@ -14,65 +14,34 @@
 }
   
 .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-
-  @media screen and (max-width: 500px) {
-    .container {
-      flex-direction: column-reverse;
-    }
+  
+.kortti h1 {
+  font-family: "Montserrat";
+  width: 100%;
+  margin-bottom: 50px;
   }
   
-  .kortti h1 {
-    font-family: "Montserrat";
-    width: 100%;
-    margin-bottom: 50px;
+.kortti {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  width: 40%;
+  min-width: 300px;
+  max-width: 90vw;
+  text-align: center;
+  height: 400px;
+  max-height: calc(100vh - 70px);
+  padding: 10px;
+  opacity: 0.8;
+  font-family: "Montserrat";
+  justify-content: space-around;
+  margin-top: 50px
   }
   
-  .kortti p {
-    width: 100%;
-    font-family: "Montserrat";
-  }
-  
-  .kortti {
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
-    width: 40%;
-    min-width: 300px;
-    max-width: 90vw;
-    text-align: center;
-    height: 400px;
-    max-height: calc(100vh - 70px);
-    padding: 10px;
-    opacity: 0.8;
-    justify-content: space-around;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .image-section {
-      padding: 0 25px;
-      width: calc(100vw - 2 * 25px);
-    }
-  
-    .kortti {
-      width: calc(100% - 2 * 10px);
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .kortti {
-      width: 95%;
-      min-width: 200px;
-    }
-    .card {
-      width: 95%;
-      min-width: 200px;
-    }
-  }
-
   .icon-container {
     display: flex;
     flex-direction: row-reverse;
@@ -100,17 +69,16 @@
   }
 
   input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 20px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 20px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 20px; 
+    margin-bottom: 16px; 
+    resize: vertical 
   }
   
-  /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #005580;
     color: white;
@@ -125,42 +93,30 @@
     font-family: 'Montserrat';
   }
 
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+    input[type=submit]:hover {
     opacity: 0.7;
   }  
 
-  .Overlay {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.25);
-    transition: all 0.2s;
-    top: 0;
-    width: calc(100vw - 40px);
-    height: calc(100vh - 40px);
-    cursor: pointer;
-}
+  @media screen and (max-width: 600px) {
+    .kortti {
+      width: calc(100% - 2 * 10px);
+    }
+  }
+    
+  @media screen and (max-width: 400px) {
+    .kortti {
+      width: 95%;
+      min-width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
+  
 
-.Modal {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    max-width: 600px;
-    max-height: 500px;
-    padding: 20px;
-    cursor: default;
-    margin-top: 20px;
-    border-radius: 1em;
-}
 
   
 

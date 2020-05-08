@@ -1,17 +1,19 @@
 import React, { Component } from "react";
-import ImageSection from "../ImageSection";
+import photo from "./2.jpg"
 
 class Participation extends Component {
   render() {
     return (
-      <ImageSection
-        title={'"Levitä tietoisuutta vesivoiman haitoista"'}
-        description={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
-        }
-        backgroundImage={"./images/2.jpg"}
-        cardAlignment={"right"}
-      />
+      <div className="image-section" style={{ backgroundImage: `url(${photo})`}}>
+          <section className={'container'}>
+            <div className={"kortti"}>
+              <h1>"Levitä tietoisuutta vesivoiman haitoista"</h1>
+              <div className="icon-container">
+                <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
+              </div>
+            </div>
+          </section>
+      </div>
     );
   }
 }

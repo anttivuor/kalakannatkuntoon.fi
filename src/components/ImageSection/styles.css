@@ -41,6 +41,7 @@
   max-height: calc(100vh - 70px);
   padding: 10px;
   opacity: 0.8;
+  margin-top: 50px
 }
 
 @media screen and (max-width: 600px) {
@@ -56,6 +57,49 @@
 
 @media screen and (max-width: 400px) {
   .card {
-    width: calc(100vh - 20px);
+    width: 95%;
+    min-width: 200px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .card h1 {
+    margin-bottom: 10px;
+    margin-top: 30px
+  }
+}
+
+@media screen and (max-width: 1900px) {
+ .card h1 {
+   margin-bottom: 10px;
+   margin-top: 20px
+ }
+}
+
+@media screen and (max-width: 870px) {
+  .card {
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    height: 80%;
+    margin-top: 50px
+  }
+}
+

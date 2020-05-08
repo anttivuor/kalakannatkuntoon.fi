@@ -2,7 +2,6 @@ import "./styles.css";
 
 import React, { PureComponent } from "react";
 
-//lisätään tänne somelinkit?
 
 
 //component used for rendering the header of the page

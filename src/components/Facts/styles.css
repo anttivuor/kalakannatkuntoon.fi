@@ -1,3 +1,7 @@
-li p:hover {
+li:hover {
     text-decoration-line: underline;
+}
+
+li {
+    font-family: 'Montserrat';
 }
