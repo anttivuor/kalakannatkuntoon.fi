@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react'
 import ImageSection from '../ImageSection'
 import MoneyCollected from './Components/MoneyCollected'
 
-const URL = 'http://localhost:3001/api/money/5eb2e0a491e3e01590e9b9ce'
+const URL = 'https://cranky-mirzakhani-cbd420.netlify.app/.netlify/functions/index/api/money/5eb2e0a491e3e01590e9b9ce'
 
 //lisätään tänne kohta, jossa käyttäjän mennessä ensimäistä kertaa tähän osioon näkyy osiossa, jossa on lahjoittajien määrä ja lahjoitettu summa,
 //niin ne kasvavat hidastuvalla nopeudella lopullisiin lukuihin
