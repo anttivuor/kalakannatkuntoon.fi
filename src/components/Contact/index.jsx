@@ -12,8 +12,8 @@ function Contact() {
   const [fname, setFname] = useState('')
   const [sname, setSname] = useState('')
   const [fback, setFback] = useState('')
-  const [message, setMessage] = useState('')
-
+  const [goodMessage, setGoodMessage] = useState('')
+  const [badMessage, setBadMessage] = useState('')
 
   function openModal() {
     setOpen(true)
@@ -27,24 +27,24 @@ function Contact() {
     event.preventDefault()
 
     if (fname.length === 0 || sname.length === 0 || fback.length === 0) {
-      setMessage('täytä jokainen kohta')
+      setBadMessage('täytä jokainen kohta!')
       setTimeout(() => {
-        setMessage('')
+        setBadMessage('')
        }, 5000);
     } else {
-      const feedBack = {
-        fname,
-        sname,
-        fback
-      }
-      await axios.post(URL, feedBack)
-      setFname('')
-      setSname('')
-      setFback('')
-      setMessage('kiitos yhteydenotostasi!')
-      setTimeout(() => {
-        setMessage('')
-      }, 5000);
+        const feedBack = {
+          fname,
+          sname,
+          fback
+        }
+        await axios.post(URL, feedBack)
+        setFname('')
+        setSname('')
+        setFback('')
+        setGoodMessage('kiitos yhteydenotostasi!')
+        setTimeout(() => {
+          setGoodMessage('')
+        }, 5000);
     } 
   } 
  
@@ -101,7 +101,8 @@ function Contact() {
               <input type="submit" value="Submit"></input>
             </form>
           </div>
-          <p className="feedback">{message}</p>
+          <p className="feedback1">{goodMessage}</p>
+          <p className="feedback2">{badMessage}</p>
         </Modal>
       </div>
     );

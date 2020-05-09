@@ -68,10 +68,15 @@
     padding: 5px;
   }
 
-  .feedback {
+  .feedback1 {
     text-align: center;
     font-family: 'Montserrat';
     color: #005580
+  }
+  .feedback2 {
+    text-align: center;
+    font-family: 'Montserrat';
+    color: red
   }
 
   input[type=text], select, textarea {
