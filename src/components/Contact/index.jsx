@@ -3,9 +3,17 @@ import "./styles.css";
 import React, {useState } from "react";
 import Modal from 'react-modal';
 import photo from "./4.jpg"
+import axios from 'axios'
+
+const URL = 'https://cranky-mirzakhani-cbd420.netlify.app/.netlify/functions/index/api/feedback'
 
 function Contact() {
   const [IsOpen,setOpen] = useState(false);
+  const [fname, setFname] = useState('')
+  const [sname, setSname] = useState('')
+  const [fback, setFback] = useState('')
+  const [message, setMessage] = useState('')
+
 
   function openModal() {
     setOpen(true)
@@ -14,6 +22,23 @@ function Contact() {
   function closeModal() {
     setOpen(false)
   }
+
+  const handleNewFeedback = async (event) => {
+    event.preventDefault()
+    const feedBack = {
+      fname,
+      sname,
+      fback
+    }
+    await axios.post(URL, feedBack)
+    setFname('')
+    setSname('')
+    setFback('')
+    setMessage('kiitos yhteydenotostasi!')
+    setTimeout(() => {
+      setMessage('')
+     }, 5000);
+  } 
  
     return (
       <div className="image-section" style={{ backgroundImage: `url(${photo})`}}>
@@ -40,16 +65,35 @@ function Contact() {
           overlayClassName="Overlay"          
         >
         <div class="contactForm">
-            <form target="_blank" action="https://www.google.fi/webhp">
+            <form onSubmit={handleNewFeedback} action="https://www.google.fi/webhp">
               <label for="fname">Etunimi</label>
-              <input type="text" id="fname" name="firstname"></input>
+              <input 
+              type="text" 
+              value={fname} 
+              id="fname" 
+              name="firstname" 
+              onChange={({ target}) => setFname(target.value)}>
+              </input>
               <label for="lname">Sukunimi</label>
-              <input type="text" id="lname" name="lastname"></input>
+              <input 
+              type="text" 
+              id="lname" 
+              value={sname}
+              name="lastname"
+              onChange={({ target}) => setSname(target.value)}>
+              </input>
               <label for="subject">Mitä haluat kertoa?</label>
-              <textarea id="subject" name="subject" style={{height:"100px"}}></textarea>
+              <textarea 
+              id="subject" 
+              name="subject"
+              value={fback} 
+              style={{height:"100px"}}
+              onChange={({ target}) => setFback(target.value)}>
+              </textarea>
               <input type="submit" value="Submit"></input>
             </form>
           </div>
+          <p className="feedback">{message}</p>
         </Modal>
       </div>
     );
