@@ -25,19 +25,27 @@ function Contact() {
 
   const handleNewFeedback = async (event) => {
     event.preventDefault()
-    const feedBack = {
-      fname,
-      sname,
-      fback
-    }
-    await axios.post(URL, feedBack)
-    setFname('')
-    setSname('')
-    setFback('')
-    setMessage('kiitos yhteydenotostasi!')
-    setTimeout(() => {
-      setMessage('')
-     }, 5000);
+
+    if (fname.length === 0 || sname.length === 0 || fback.length === 0) {
+      setMessage('täytä jokainen kohta')
+      setTimeout(() => {
+        setMessage('')
+       }, 5000);
+    } else {
+      const feedBack = {
+        fname,
+        sname,
+        fback
+      }
+      await axios.post(URL, feedBack)
+      setFname('')
+      setSname('')
+      setFback('')
+      setMessage('kiitos yhteydenotostasi!')
+      setTimeout(() => {
+        setMessage('')
+      }, 5000);
+    } 
   } 
  
     return (
