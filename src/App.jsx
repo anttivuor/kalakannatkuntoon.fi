@@ -8,6 +8,7 @@ import Participation from "./components/Participation";
 import ReactFullpage from "@fullpage/react-fullpage";
 import "fullpage.js/vendors/scrolloverflow";
 import Contact from "./components/Contact";
+import Story from "./components/Story"
 
 import "./styles.css";
 
@@ -49,6 +50,9 @@ class App extends Component {
                 </div>
                 <div className="section">
                   <Donation />
+                </div>
+                <div className="section">
+                  <Story />
                 </div>
                 <div className="section">
                   <Contact />

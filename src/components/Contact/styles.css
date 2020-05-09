@@ -20,9 +20,9 @@
 }
   
 .kortti h1 {
-  font-family: "Montserrat";
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  font-weight: 100;
   }
   
 .kortti {

@@ -51,8 +51,10 @@ class Header extends PureComponent {
           </div>
           <div onClick={() => this.onClick(5)}>Mitä voin tehdä?</div>
           <div onClick={() => this.onClick(6)}>Lahjoita</div>
+          <div onClick={() => this.onClick(3)}>Videoon</div>
           <div onClick={() => this.onClick(4)}>Faktat tiskiin</div>
-          <div onClick={() => this.onClick(7)}>Ota yhteyttä</div>
+          <div onClick={() => this.onClick(7)}>Meistä</div>
+          <div onClick={() => this.onClick(8)}>Ota yhteyttä</div>
         </div>
       )
     }
@@ -61,9 +63,11 @@ class Header extends PureComponent {
       <div className={"header"}>
         <div onClick={() => this.onClick(5)}>Mitä voin tehdä?</div>
         <div onClick={() => this.onClick(6)}>Lahjoita</div>
+        <div onClick={() => this.onClick(3)}>Videoon</div>
         <img onClick={() => this.onClick(1)} src={"./images/logo.png"} className={"logo"} alt={"Fish logo"} />
         <div onClick={() => this.onClick(4)}>Faktat tiskiin</div>
-        <div onClick={() => this.onClick(7)}>Ota yhteyttä</div>
+        <div onClick={() => this.onClick(7)}>Meistä</div>
+        <div onClick={() => this.onClick(8)}>Ota yhteyttä</div>
       </div>
     );
   }

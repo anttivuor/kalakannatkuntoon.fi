@@ -17,7 +17,7 @@ function Contact() {
  
     return (
       <div className="image-section" style={{ backgroundImage: `url(${photo})`}}>
-          <section className={'container'}>
+          <section className={'contact-container'}>
             <div className={"kortti"}>
               <h1>ota yhteyttä</h1>
               <div className="icon-container">
