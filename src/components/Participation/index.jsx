@@ -1,19 +1,16 @@
 import React, { Component } from "react";
-import photo from "./2.jpg"
+import CardComponent from '../CardComponent'
 
 class Participation extends Component {
   render() {
     return (
-      <div className="image-section" style={{ backgroundImage: `url(${photo})`}}>
-          <section className={'container'}>
-            <div className={"kortti"}>
-              <h1>"Levitä tietoisuutta vesivoiman haitoista"</h1>
-              <div className="icon-container">
-                <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
-              </div>
-            </div>
-          </section>
-      </div>
+       <CardComponent
+        title={'"Levitä tietoisuutta vesivoiman haitoista"'}
+        backgroundImage={'./images/2.jpg'}
+        cardAlignment={'right'}
+      >
+      '"Lorem Ipsum is simply dummy text of the printing and typesetting industry.".'
+      </CardComponent>
     );
   }
 }

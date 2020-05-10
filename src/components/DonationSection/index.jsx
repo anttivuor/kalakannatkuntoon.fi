@@ -2,9 +2,9 @@ import "./styles.css";
 
 import React, { Component } from "react";
 
-//renders a card for each element of the page. used for making each page similar
+//renders a card for the donation section
 
-class ImageSection extends Component {
+class DonationSection extends Component {
   render() {
     const {
       title,
@@ -29,4 +29,4 @@ class ImageSection extends Component {
   }
 }
 
-export default ImageSection;
+export default DonationSection;

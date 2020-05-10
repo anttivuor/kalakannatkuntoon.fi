@@ -1,13 +1,10 @@
 import axios from 'axios'
 import React, {useEffect, useState} from 'react'
 
-import ImageSection from '../ImageSection'
+import DonationSection from '../DonationSection'
 import MoneyCollected from './Components/MoneyCollected'
 
 const URL = 'https://cranky-mirzakhani-cbd420.netlify.app/.netlify/functions/index/api/money/5eb2e0a491e3e01590e9b9ce'
-
-//niin ne kasvavat hidastuvalla nopeudella lopullisiin lukuihin
-
 
 const Donation = () => {
     const [moneyCollected, setMoney] = useState('')
@@ -33,7 +30,7 @@ const Donation = () => {
     }
 
     return (
-      <ImageSection
+      <DonationSection
         title={'"Liity yhteisiin talkoisiimme"'}
         description={
           'Lahjoita sinäkin tänään. Kerätyillä rahoilla rahoitamme uusien kalateiden rakentamista ympäri Suomea.'
@@ -42,7 +39,7 @@ const Donation = () => {
         cardAlignment={'left'}
       >
         <MoneyCollected amount={moneyCollected} handleMoneyChange={handleMoneyChange} />
-      </ImageSection>
+      </DonationSection>
     )
   }
 

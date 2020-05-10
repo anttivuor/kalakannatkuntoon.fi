@@ -13,73 +13,45 @@
   cursor: pointer;
 }
   
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-  
-.kortti h1 {
-  width: 100%;
-  margin-bottom: 40px;
-  font-weight: 100;
-  }
-  
-.kortti {
-  display: flex;
-  flex-direction: column;
-  background-color: lightgray;
-  width: 40%;
-  min-width: 300px;
-  max-width: 90vw;
-  text-align: center;
-  height: 400px;
-  max-height: calc(100vh - 70px);
-  padding: 10px;
-  opacity: 0.8;
-  font-family: "Montserrat";
-  justify-content: space-around;
-  margin-top: 50px
-  }
-  
-  .icon-container {
+
+.icon-container {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  .icon-container p {
+.icon-container p {
     margin-left: 20px;
   }
 
-  .icons {
+.icons {
       display: flex;
       flex-direction: column;
       vertical-align: center;
   }
 
-  a img {
+a img {
     width: 50px;
     height: 50px
   }
 
-  a {
+a {
     display: flex;
     flex-direction: row;
     padding: 5px;
   }
 
-  .feedback1 {
+.feedback1 {
     text-align: center;
     font-family: 'Montserrat';
     color: #005580
   }
-  .feedback2 {
+.feedback2 {
     text-align: center;
     font-family: 'Montserrat';
     color: red
   }
 
-  input[type=text], select, textarea {
+input[type=text], select, textarea {
     width: 100%; 
     padding: 20px;
     border: 1px solid #ccc; 
@@ -90,7 +62,7 @@
     resize: vertical 
   }
   
-  input[type=submit] {
+input[type=submit] {
     background-color: #005580;
     color: white;
     padding: 12px 20px;
@@ -99,33 +71,15 @@
     cursor: pointer;
   }
 
-  .contactForm {
+.contactForm {
     text-align: center;
     font-family: 'Montserrat';
   }
 
-    input[type=submit]:hover {
+input[type=submit]:hover {
     opacity: 0.7;
   }  
 
-  @media screen and (max-width: 600px) {
-    .kortti {
-      width: calc(100% - 2 * 10px);
-    }
-  }
-    
-  @media screen and (max-width: 400px) {
-    .kortti {
-      width: 95%;
-      min-width: 200px;
-    }
-  }
-  
-  @media screen and (max-width: 500px) {
-    .container {
-      flex-direction: column-reverse;
-    }
-  }
   
 
 
