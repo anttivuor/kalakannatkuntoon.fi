@@ -2,7 +2,7 @@ import "./styles.css";
 
 import React, { Component } from "react";
 
-//renders a card for the donation section
+//renders a component for the donation section
 
 class DonationSection extends Component {
   render() {

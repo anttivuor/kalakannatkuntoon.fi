@@ -1,5 +1,7 @@
 import React from 'react'
 
+//component for rendering the contact form on the page when "ota yhteyttä" is pressed 
+
 const ContactForm = ({handleNewFeedback, fname, sname, fback, setFname, setSname, setFback}) => {
     return (
       <div class="contactForm">

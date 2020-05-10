@@ -8,6 +8,9 @@ import ContactForm from './ContactForm'
 
 const URL = 'https://cranky-mirzakhani-cbd420.netlify.app/.netlify/functions/index/api/feedback'
 
+//component, where social medias are given and some text also. 
+//when ota yhteyttä is pressed, information is sent to the database via the backend 
+
 
 function Contact() {
   const [IsOpen,setOpen] = useState(false);
@@ -17,6 +20,8 @@ function Contact() {
   const [goodMessage, setGoodMessage] = useState('')
   const [badMessage, setBadMessage] = useState('')
 
+  //open and close the modal
+
   function openModal() {
     setOpen(true)
   }
@@ -24,6 +29,9 @@ function Contact() {
   function closeModal() {
     setOpen(false)
   }
+
+  //send feedback to the database
+  //reset slots and give some feedback to the user
 
   const handleNewFeedback = async (event) => {
     event.preventDefault()
@@ -49,6 +57,8 @@ function Contact() {
         }, 5000);
     } 
   } 
+
+  //uses modal component from npm library
  
     return (
       <CardComponent

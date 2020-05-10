@@ -6,9 +6,14 @@ import MoneyCollected from './Components/MoneyCollected'
 
 const URL = 'https://cranky-mirzakhani-cbd420.netlify.app/.netlify/functions/index/api/money/5eb2e0a491e3e01590e9b9ce'
 
+//reseaves information from the database and renders it on the page. Changes, when new donations are given
+//uses moneycollected component to render 
+
 const Donation = () => {
     const [moneyCollected, setMoney] = useState('')
     const [old, setOld] = useState('')
+
+    //get the inital amount of money
 
     useEffect(() => {
       axios.get(URL).then(response => response.data)
@@ -17,6 +22,8 @@ const Donation = () => {
           setOld(initialPeople.number)
         })
       }, [])
+
+      //sends information to database and updates the amount of money
 
     const handleMoneyChange = (money) => {
 

@@ -21,6 +21,8 @@ class App extends Component {
     };
   }
 
+  //creates a sliding effect when scrolled up or down
+
   render() {
     const { currentScreen } = this.state;
 

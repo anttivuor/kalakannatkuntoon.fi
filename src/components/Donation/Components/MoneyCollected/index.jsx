@@ -8,6 +8,8 @@ import Slider from 'rc-slider';
 import React, { useState } from 'react'
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar'
 
+//component used for rendering the inner parts of the donation component
+
 const MoneyCollected = ({ amount, handleMoneyChange }) => {
     const [donationAmount, changeDonationAmount] = useState(10)
     return (

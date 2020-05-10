@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Modal from 'react-modal';
 import CardComponent from '../CardComponent'
 
+//renders a page with statements to be pressed, which open a modal with more information
+
 class Facts extends Component {
   
   constructor(props) {

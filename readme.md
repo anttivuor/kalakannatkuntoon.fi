@@ -1,6 +1,6 @@
 ## kalakannatkuntoon.fi
 
-kalakannatkuntoon.fi is a react based campaign website against hydropower. This website is a part of a course in Aalto called "basics of online publishing". This website was first built in Codesandbox and then transferred to Git.
+kalakannatkuntoon.fi is a react based campaign website against hydropower. This website is a part of a course in Aalto called "basics of online publishing". This website was first built in Codesandbox and then transferred to Git. Both the backend and frontend are located at netlify.
 
 # techniques
 
@@ -11,6 +11,7 @@ This project is built using following techniques:
 - HTML
 - CSS
 - Git
+- Node.js
 
 # running this project on your computer
 
@@ -20,5 +21,5 @@ This project is built using following techniques:
 
 # creators
 
-- Juhana Viitamo, design and code
-- Antti Vuorenmaa, code
+- Juhana Viitamo: frontend, backend, design 
+- Antti Vuorenmaa: frontend, backend

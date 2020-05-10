@@ -17,6 +17,8 @@ class LandingPage extends Component {
 
   render() {
 
+    //render the landing page with typing effect imported from npm library
+
     return (
       <section className={"landing-page section"}>
         <Typing speed={150} className="head">"Älä patoa luonnon virtaa"</Typing>
