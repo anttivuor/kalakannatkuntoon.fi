@@ -15,7 +15,7 @@
   margin-top: -50px;
 }
 
-.arrow{
+.arrow {
   position: absolute;
   transform: translate(-50%,-50%);
   bottom: 30px;
@@ -39,15 +39,16 @@
   animation-delay: -0.4s;
 }
 @keyframes animate {
-  0%{
+  0% {
       opacity: 0;
-      transform: rotate(45deg) translate(-20px,-20px);
+      transform: rotate(45deg) translate(-20px, -20px);
   }
-  50%{
+  50% {
       opacity: 1;
+      transform: rotate(45deg);
   }
-  100%{
+  100% {
       opacity: 0;
-      transform: rotate(45deg) translate(20px,20px);
+      transform: rotate(45deg) translate(20px, 20px);
   }
 }
