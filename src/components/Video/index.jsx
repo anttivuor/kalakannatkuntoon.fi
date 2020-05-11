@@ -38,7 +38,7 @@ class Video extends Component {
           poster={"./images/video-thumbnail.png"}
         >
           <source
-            src={"https://drive.google.com/open?id=1jOtKFidaGxkgeTL0XSPnB3aBv0yQChpb"}
+            src={"https://srv-file8.gofile.io/download/tduat6/kalavideo.mp4"}
             type={"video/mp4"}
           />
           Your browser does not support HTML5 video.
