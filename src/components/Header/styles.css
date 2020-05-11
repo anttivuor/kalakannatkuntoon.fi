@@ -63,7 +63,7 @@ img:hover {
 }
 
 .header-mobile.visible {
-  height: 250px;
+  height: 350px;
 }
 
 .header-mobile.hidden {
@@ -76,7 +76,7 @@ img:hover {
 
 .header-mobile > div {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
