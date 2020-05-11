@@ -1,0 +1,41 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.admin > a {
+    color: #005580;
+    margin-top: 20px;
+}
+
+.admin-feedbacks {
+    max-width: 700px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.admin table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.admin td, .admin th {
+    border: 1px solid #DDDDDD;
+    text-align: left;
+    padding: 8px;
+}
+
+.admin thead tr {
+    background-color: #DDDDDD !important;
+}
