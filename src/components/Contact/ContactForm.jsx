@@ -2,10 +2,11 @@ import React from 'react'
 
 //component for rendering the contact form on the page when "ota yhteyttä" is pressed 
 
-const ContactForm = ({handleNewFeedback, fname, sname, fback, setFname, setSname, setFback}) => {
+const ContactForm = ( {handleNewFeedback, fname, sname, fback, setFname, setSname, setFback} ) => {
+  
     return (
       <div class="contactForm">
-        <form onSubmit={handleNewFeedback} action="https://www.google.fi/webhp">
+        <form onSubmit={handleNewFeedback}>
           <label for="fname">Etunimi</label>
           <input 
           type="text" 

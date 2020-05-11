@@ -11,13 +11,11 @@ const URL = 'https://cranky-mirzakhani-cbd420.netlify.app/.netlify/functions/ind
 //component, where social medias are given and some text also. 
 //when ota yhteyttä is pressed, information is sent to the database via the backend 
 
-
 function Contact() {
   const [IsOpen,setOpen] = useState(false);
   const [fname, setFname] = useState('')
   const [sname, setSname] = useState('')
   const [fback, setFback] = useState('')
-  const [goodMessage, setGoodMessage] = useState('')
   const [badMessage, setBadMessage] = useState('')
 
   //open and close the modal
@@ -51,10 +49,7 @@ function Contact() {
         setFname('')
         setSname('')
         setFback('')
-        setGoodMessage('kiitos yhteydenotostasi!')
-        setTimeout(() => {
-          setGoodMessage('')
-        }, 5000);
+        setOpen(!IsOpen)
     } 
   } 
 
@@ -86,8 +81,7 @@ function Contact() {
           className="Modal"
           overlayClassName="Overlay"          
         >
-          <ContactForm fname={fname} sname={sname} fback={fback} handleNewFeedback={handleNewFeedback} setFname={setFname} setSname={setSname} setFback={setFback} />
-          <p className="feedback1">{goodMessage}</p>
+          <ContactForm IsOpen={IsOpen} setOpen={setOpen} fname={fname} sname={sname} fback={fback} handleNewFeedback={handleNewFeedback} setFname={setFname} setSname={setSname} setFback={setFback} />
           <p className="feedback2">{badMessage}</p>
         </Modal>
       </CardComponent>
