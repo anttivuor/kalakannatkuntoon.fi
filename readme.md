@@ -19,7 +19,7 @@ This project is built using following techniques:
 - open project and run $npm start
 - project opens at localhost:3000
 
-# using this project 
+# using this project
 
 - the web site can be found at www.kalakannatkuntoon.fi
 - there is a page www.kalakannatkuntoon.fi/admin, where you can find the feedback sent from the main page
@@ -27,5 +27,7 @@ This project is built using following techniques:
 
 # creators
 
-- Juhana Viitamo: frontend, backend, design 
+- Juhana Viitamo: frontend, backend, design
 - Antti Vuorenmaa: frontend, backend
+- Maria Oehlandt: frontend, sisältö
+- Aapo Kallunki: frontend, sisältö
