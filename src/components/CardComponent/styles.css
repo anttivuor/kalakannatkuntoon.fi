@@ -40,9 +40,10 @@
 
 .mainListElement {
   padding: 4px;
+  cursor: default;
 }
 
-.mainListElement:hover {
+.mainListElement.cursor:hover {
     text-decoration-line: underline;
 }
 

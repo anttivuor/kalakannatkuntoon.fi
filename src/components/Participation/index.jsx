@@ -11,7 +11,7 @@ class Participation extends Component {
       >
         <p style={ {padding: "2px"} }>
           Jokainen meistä voi pienilläkin teoilla vaikuttaa kestävämpään tulevaisuuteen ja kalakantojen säilymisen varmistamiseen.
-           <ul className="mainList part">
+           <ul className="mainList">
              <li className="mainListElement">Aloita keskustelu aiheesta ja lisää tietoisuutta vesivoiman vaikutuksista lähipiirissäsi</li>
              <li className="mainListElement">Suosi muita kestäviä energiamuotoja, ja pyri välttämään vesivoimaa suosivia energiayhtiöitä</li>
              <li className="mainListElement">Jaa julkaisujamme sosiaalisessa mediassa <b>#kalakannatkuntoon</b></li>

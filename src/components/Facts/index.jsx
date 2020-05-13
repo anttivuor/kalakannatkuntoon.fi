@@ -28,25 +28,25 @@ class Facts extends Component {
       >
         <ul className="mainList">
           <li
-          className="mainListElement" 
+          className="mainListElement cursor" 
           style={{cursor: "pointer" }}
           onClick={() => this.setState({ modal1: true })}>
             Mistä kampanjassa on kyse?
           </li>
           <li
-          className="mainListElement" 
+          className="mainListElement cursor" 
           style={{cursor: "pointer" }}
           onClick={() => this.setState({ modal2: true })}>
             Miten vesivoima vaikuttaa ympäristöön?
           </li>
           <li
-          className="mainListElement" 
+          className="mainListElement cursor" 
           style={{cursor: "pointer"}}
           onClick={() => this.setState({ modal3: true })}>
             Miksi vesivoimaa tulisi vähentää?
           </li>
           <li
-          className="mainListElement" 
+          className="mainListElement cursor" 
           style={{cursor: "pointer"}}
           onClick={() => this.setState({ modal4: true })}>
             Miksi ovat kampanjan tavoitteet kohderyhmissä?
