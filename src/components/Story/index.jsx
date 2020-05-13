@@ -40,7 +40,7 @@ class Story extends Component {
         </div>
         </Modal>
         <Modal className="Modal" overlayClassName="Overlay" isOpen={modal2} onRequestClose={() => this.setState({ modal2: false })}>
-          <ul className="longText">
+          <ul className="presentationText">
             <li>Kampanjamme väitteet perustuvat pelkästään faktoihin.</li>
             <li>Emme tiedota mitään, mikä perustuu pelkästään oletuksiin tai mielipiteisiin, vaan haluamme agendoitua luotettavana tiedon lähteenä. Emme myöskään esitä näitä faktoja provosoivalla tai millään tavoin harhaanjohtavalla tavalla.</li>
             <li>Olemme avoimia omasta mielipiteestämme sekä kampanjamme tavoitteista. Pyrimme esittämään faktat neutraalisti hyökkäämättä muita osapuolia, kuten energiayhtiöitä, kohtaan. Otamme siis myös heidän näkökulman huomioon kampanjan toteutuksessa.</li>
