@@ -72,10 +72,10 @@ const Contact = () => {
         </div>
 
         <div className={'icons'}>
-          <a href={'https://www.instagram.com/kalakannatkuntoon.fi/?hl=fi'} target={'_blank'} rel={'noopener noreferrer'}><img src={'./images/icon.png'} alt={'instagram'} /></a>
-          <a href={'https://www.facebook.com/Kalakannat-kuntoon-106419357740688/?hc_ref=ARSlhoQMqWQp1a43QudSFRaIs5o1Sy38fRujypHGGOjxNp0yj91uKQ0QEveTcl72htw&ref=nf_target&__tn__=kC-R'} target={'_blank'} rel={'noopener noreferrer'}><img src={'./images/facebook.png'} alt={'facebook'} /></a>
+          <a href={'https://www.instagram.com/virtaavavesi/'} target={'_blank'} rel={'noopener noreferrer'}><img src={'./images/icon.png'} alt={'instagram'} /></a>
+          <a href={'https://www.facebook.com/VirtaavaVesi-105852604468111'} target={'_blank'} rel={'noopener noreferrer'}><img src={'./images/facebook.png'} alt={'facebook'} /></a>
           <a href={'https://www.youtube.com/channel/UCwL3qv3pP2feQQgKyS1JORw'} target={'_blank'} rel={'noopener noreferrer'}><img src={'https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/youtube-512.png'} alt={'youtube'} /></a>
-          <a href={'https://twitter.com/KalojenPuolesta'} target={'_blank'} rel={'noopener noreferrer'}><img src={'https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png'} alt={'twitter'} /></a>
+          <a href={'https://twitter.com/VirtaavaVesi'} target={'_blank'} rel={'noopener noreferrer'}><img src={'https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png'} alt={'twitter'} /></a>
         </div>
       </div>
       <div className={'contact'} onClick={openModal}>

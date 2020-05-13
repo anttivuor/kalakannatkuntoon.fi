@@ -11,7 +11,7 @@ class Participation extends Component {
         cardAlignment={'right'}
       >
         <p style={{ padding: '2px' }}>
-          Jokainen meistä voi pienilläkin teoilla vaikuttaa kestävämpään tulevaisuuteen ja kalakantojen säilymisen varmistamiseen.
+          Jokainen meistä voi pienilläkin teoilla vaikuttaa kestävämpään tulevaisuuteen ja kalakantojen turvaamiseen.
         </p>
         <ul className={'mainList'}>
           <li className={'mainListElement'}>Aloita keskustelu aiheesta ja lisää tietoisuutta vesivoiman vaikutuksista lähipiirissäsi</li>
