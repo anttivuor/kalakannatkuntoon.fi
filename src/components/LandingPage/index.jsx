@@ -1,8 +1,7 @@
-import "./styles.css";
+import './styles.css'
 
-import React, { Component } from "react";
-import Typing from 'react-typing-animation';
-
+import React, { Component } from 'react'
+import Typing from 'react-typing-animation'
 
 class LandingPage extends Component {
   constructor(props) {
@@ -13,23 +12,23 @@ class LandingPage extends Component {
     }
   }
 
-  onClick = index => this.props.fullpage.fullpageApi.moveTo(index);
+  onClick = index => this.props.fullpage.fullpageApi.moveTo(index)
 
   render() {
 
     //render the landing page with typing effect imported from npm library
 
     return (
-      <section className={"landing-page section"}>
-        <Typing speed={150} className="head">"Älä patoa luonnon virtaa"</Typing>
-        <div className="arrow" onClick={() => this.onClick(3)}>
+      <section className={'landing-page section'}>
+        <Typing speed={150} className={'head'}>"Älä patoa luonnon virtaa"</Typing>
+        <div className={'arrow'} onClick={() => this.onClick(3)}>
           <span></span>
           <span></span>
           <span></span>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default LandingPage;
+export default LandingPage

@@ -1,10 +1,8 @@
-import "./styles.css";
+import './styles.css'
 
-import React, { PureComponent } from "react";
+import React, { PureComponent } from 'react'
 
-
-
-//component used for rendering the header of the page
+//component used for rendering the header/navigation of the page
 
 class Header extends PureComponent {
   constructor(props) {
@@ -17,6 +15,7 @@ class Header extends PureComponent {
   }
 
   componentDidMount = () => {
+    // Listen for window resize events
     window.addEventListener('resize', this.updateDimensions)
   }
 
@@ -69,8 +68,8 @@ class Header extends PureComponent {
         <div onClick={() => this.onClick(7)}>Meistä</div>
         <div onClick={() => this.onClick(8)}>Ota yhteyttä</div>
       </div>
-    );
+    )
   }
 }
 
-export default Header;
+export default Header

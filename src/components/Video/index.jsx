@@ -1,51 +1,46 @@
-import "./styles.css";
+import './styles.css'
 
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
 //component used for playing the video. The video starts automatically, as user scrolls to the second page.
 //user must press somewhere on the page for the video to be able to start.
 
 class Video extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       videoStarted: false
-    };
+    }
   }
 
   //checks, if user's previous position is the the initial page and is on the second page, where video exists
   //then, sets videoStarted to true and plays the video
-
   componentDidUpdate = prevProps => {
-    if (
-      prevProps.currentScreen === 0 &&
-      this.props.currentScreen === 2 &&
-      !this.state.videoStarted
-    ) {
+    if (prevProps.currentScreen === 0 && this.props.currentScreen === 2 && !this.state.videoStarted) {
       this.setState({ videoStarted: true }, () => {
-        this.video.play();
-      });
+        this.video.play()
+      })
     }
-  };
+  }
 
   render() {
     return (
-      <section className={"video"}>
+      <section className={'video'}>
         <video
           ref={ref => (this.video = ref)}
           controls
-          poster={"./images/video-thumbnail.png"}
+          poster={'./images/video-thumbnail.png'}
         >
           <source
-            src={"https://kalakannatkuntoon.fra1.digitaloceanspaces.com/kalavideo.mp4"}
-            type={"video/mp4"}
+            src={'https://kalakannatkuntoon.fra1.digitaloceanspaces.com/kalavideo.mp4'}
+            type={'video/mp4'}
           />
           Your browser does not support HTML5 video.
         </video>
       </section>
-    );
+    )
   }
 }
 
-export default Video;
+export default Video

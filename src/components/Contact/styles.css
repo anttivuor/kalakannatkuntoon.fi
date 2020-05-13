@@ -14,115 +14,115 @@
   background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-  
+
 .icon-container {
-    display: flex;
-    flex-direction: row-reverse;
-  }
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 .icon-container p {
-    margin-left: 50px;
-    font-size: 16px;
-    margin-top: 10px;
-    text-align: left;
-  }
+  margin-left: 50px;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: left;
+}
 
 .icon-container li {
-    margin-left: 50px;
-    font-size: 16px;
-    text-align: left;
-    padding: 4px
+  margin-left: 50px;
+  font-size: 16px;
+  text-align: left;
+  padding: 4px
 }
 
 .icons {
-      display: flex;
-      flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
 a img {
-    width: 50px;
-    height: 50px
-  }
+  width: 50px;
+  height: 50px
+}
 
 a {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-  }
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
 
 .feedback1 {
-    text-align: center;
-    font-family: 'Montserrat';
-    color: #005580
-  }
+  text-align: center;
+  font-family: 'Montserrat';
+  color: #005580
+}
+
 .feedback2 {
-    text-align: center;
-    font-family: 'Montserrat';
-    color: red
-  }
+  text-align: center;
+  font-family: 'Montserrat';
+  color: red
+}
 
 input[type=text], select, textarea {
-    width: 100%; 
-    padding: 20px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 20px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
 input[type=submit] {
-    background-color: #005580;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+  background-color: #005580;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 .contactForm {
-    text-align: center;
-    font-family: 'Montserrat';
-  }
+  text-align: center;
+  font-family: 'Montserrat';
+}
 
 input[type=submit]:hover {
-    opacity: 0.7;
-  }  
+  opacity: 0.7;
+}
 
-  @media screen and (max-width: 900px) {
-    .icons {
-      margin-left: 20px
-    }
-    .icon-container p {
-      margin-left: 20px;
-    }
-    .icon-container li {
-      margin-left: 20px;
-    }
+@media screen and (max-width: 900px) {
+  .icons {
+    margin-left: 20px
   }
-
-  @media screen and (max-width: 500px) {
-    .icon-container p {
-      font-size: 15px;
-      margin-left: 15px;
-    }
-    .icon-container li {
-      font-size: 15px;
-      margin-left: 15px;
-    }
+  .icon-container p {
+    margin-left: 20px;
   }
- 
-  @media screen and (max-width: 400px) {
-    a img {
-      width: 40px;
-      height: 40px
-    }
+  .icon-container li {
+    margin-left: 20px;
   }
+}
 
-  
+@media screen and (max-width: 500px) {
+  .icon-container p {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .icon-container li {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  a img {
+    width: 40px;
+    height: 40px
+  }
+}
 
 
-  
 
- 
+
+
+
