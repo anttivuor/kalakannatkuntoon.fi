@@ -15,20 +15,28 @@
   cursor: pointer;
 }
   
-
 .icon-container {
     display: flex;
     flex-direction: row-reverse;
   }
 
 .icon-container p {
-    margin-left: 20px;
+    margin-left: 50px;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
   }
+
+.icon-container li {
+    margin-left: 50px;
+    font-size: 16px;
+    text-align: left;
+    padding: 4px
+}
 
 .icons {
       display: flex;
       flex-direction: column;
-      vertical-align: center;
   }
 
 a img {
@@ -81,6 +89,36 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.7;
   }  
+
+  @media screen and (max-width: 900px) {
+    .icons {
+      margin-left: 20px
+    }
+    .icon-container p {
+      margin-left: 20px;
+    }
+    .icon-container li {
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .icon-container p {
+      font-size: 15px;
+      margin-left: 15px;
+    }
+    .icon-container li {
+      font-size: 15px;
+      margin-left: 15px;
+    }
+  }
+ 
+  @media screen and (max-width: 400px) {
+    a img {
+      width: 40px;
+      height: 40px
+    }
+  }
 
   
 

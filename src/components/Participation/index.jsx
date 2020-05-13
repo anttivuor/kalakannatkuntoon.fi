@@ -5,11 +5,18 @@ class Participation extends Component {
   render() {
     return (
        <CardComponent
-        title={'"Levitä tietoisuutta vesivoiman haitoista"'}
+        title={'Levitä tietoisuutta vesivoiman haitoista'}
         backgroundImage={'./images/2.jpg'}
         cardAlignment={'right'}
       >
-      '"Lorem Ipsum is simply dummy text of the printing and typesetting industry.".'
+        <p style={ {padding: "2px"} }>
+          Jokainen meistä voi pienilläkin teoilla vaikuttaa kestävämpään tulevaisuuteen ja kalakantojen säilymisen varmistamiseen.
+           <ul className="mainList part">
+             <li className="mainListElement">Aloita keskustelu aiheesta ja lisää tietoisuutta vesivoiman vaikutuksista lähipiirissäsi</li>
+             <li className="mainListElement">Suosi muita kestäviä energiamuotoja, ja pyri välttämään vesivoimaa suosivia energiayhtiöitä</li>
+             <li className="mainListElement">Jaa julkaisujamme sosiaalisessa mediassa <b>#kalakannatkuntoon</b></li>
+           </ul>
+          </p>
       </CardComponent>
     );
   }

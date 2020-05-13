@@ -38,7 +38,7 @@ const Donation = () => {
 
     return (
       <DonationSection
-        title={'"Liity yhteisiin talkoisiimme"'}
+        title={'Liity yhteisiin talkoisiimme'}
         description={
           'Lahjoita sinäkin tänään. Kerätyillä rahoilla rahoitamme uusien kalateiden rakentamista ympäri Suomea.'
         }

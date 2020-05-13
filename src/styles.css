@@ -42,5 +42,84 @@ body {
   margin-top: 20px;
   border-radius: 1em;
   outline: 0 none;
+  font-family: 'Montserrat';
+  text-align: center;
 }
+
+.Modal ul li {
+  padding: 5px
+}
+
+.mediumText {
+  margin-top: 75px;  
+}
+
+.shortText {
+  margin-top: 100px;
+}
+
+.presentationText {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .presentationText {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .presentationText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .presentationText {
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .longText {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .longText {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .longText {
+    font-size: 10.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mediumText {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mediumText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .shortText {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .mainList.part {
+    font-size: smaller;
+  }
+}
+
 

@@ -57,19 +57,24 @@ function Contact() {
  
     return (
       <CardComponent
-        title={'"Ota yhteyttä"'}
-        description={
-          '"Lorem Ipsum is simply dummy text of the printing and typesetting industry.".'
-        }
+        title={'Ota yhteyttä'}
         backgroundImage={'./images/4.jpg'}
         cardAlignment={'left'}
       >
         <div className="icon-container">
-          <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
+          <div className="inf">
+          <p>Seuraa kampanjaamme myös sosiaalisissa medioissa sekä osallistu keskusteluun <b>#kalakannatkuntoon</b></p>
+          <ul style={ {fontSize: "15px"} }>
+            <li>kalakannatkuntoon<br></br> <b>(</b>@gmail.com<b>)</b></li>
+            <li>+358453196495</li>
+            <li>Kalatie 76, 02580 Keitele</li>
+          </ul>
+          </div>
           <div className="icons">
-            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img src="./images/icon.png" alt="instagram"></img></a>
-            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" alt="facebook"></img></a>
-            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Finstagram_174855&psig=AOvVaw0vuLjjr0Gm_P56BrRobPjK&ust=1588690260132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjSlce6mukCFQAAAAAdAAAAABAD"><img src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" alt="twitter"></img></a>
+            <a href="https://www.instagram.com/kalakannatkuntoon.fi/?hl=fi" target="_blank" rel="noopener noreferrer"><img src="./images/icon.png" alt="instagram"></img></a>
+            <a href="https://www.facebook.com/Kalakannat-kuntoon-106419357740688/?hc_ref=ARSlhoQMqWQp1a43QudSFRaIs5o1Sy38fRujypHGGOjxNp0yj91uKQ0QEveTcl72htw&ref=nf_target&__tn__=kC-R" target="_blank" rel="noopener noreferrer"><img src="./images/facebook.png" alt="facebook"></img></a>
+            <a href="https://www.youtube.com/channel/UCwL3qv3pP2feQQgKyS1JORw" target="_blank" rel="noopener noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/youtube-512.png" alt="youtube"></img></a>
+            <a href="https://twitter.com/KalojenPuolesta" target="_blank" rel="noopener noreferrer"><img src="https://cdn2.iconfinder.com/data/icons/minimalism/512/twitter.png" alt="twitter"></img></a>
           </div>
         </div>
         <div className={"contact"} onClick={openModal}>

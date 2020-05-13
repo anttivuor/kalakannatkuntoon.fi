@@ -19,6 +19,12 @@ This project is built using following techniques:
 - open project and run $npm start
 - project opens at localhost:3000
 
+# using this project 
+
+- the web site can be found at www.kalakannatkuntoon.fi
+- there is a page www.kalakannatkuntoon.fi/admin, where you can find the feedback sent from the main page
+- backend is running at netlify, which saves all the information to MongoDB database, which is then used to display information
+
 # creators
 
 - Juhana Viitamo: frontend, backend, design 

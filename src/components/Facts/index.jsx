@@ -12,44 +12,80 @@ class Facts extends Component {
     this.state = {
       modal1: false,
       modal2: false,
-      modal3: false
+      modal3: false,
+      modal4: false
   }
 }
 
   render() {
-    const { modal1, modal2, modal3 } = this.state
+    const { modal1, modal2, modal3, modal4 } = this.state
 
     return (
       <CardComponent
-        title={'"Vesivoima tuhoaa arvokkaat kalakantamme!"'}
+        title={'Faktat tiskiin'}
         backgroundImage={'./images/1.jpg'}
         cardAlignment={'left'}
       >
-        <ul>
-          <li 
+        <ul className="mainList">
+          <li
+          className="mainListElement" 
           style={{cursor: "pointer" }}
           onClick={() => this.setState({ modal1: true })}>
-            elämä on keitto, minä olen haarukka
+            Mistä kampanjassa on kyse?
           </li>
-          <li 
+          <li
+          className="mainListElement" 
           style={{cursor: "pointer" }}
           onClick={() => this.setState({ modal2: true })}>
-            ollakko vaiko eikö olla
+            Miten vesivoima vaikuttaa ympäristöön?
           </li>
-          <li 
+          <li
+          className="mainListElement" 
           style={{cursor: "pointer"}}
           onClick={() => this.setState({ modal3: true })}>
-            elämä on ihmisten parasta aikaa
+            Miksi vesivoimaa tulisi vähentää?
+          </li>
+          <li
+          className="mainListElement" 
+          style={{cursor: "pointer"}}
+          onClick={() => this.setState({ modal4: true })}>
+            Miksi ovat kampanjan tavoitteet kohderyhmissä?
           </li>
         </ul>
         <Modal className="Modal" overlayClassName="Overlay" isOpen={modal1} onRequestClose={() => this.setState({ modal1: false })}>
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
+          <ul className="mediumText">
+            <li>Vesivoima on laajasti Suomessa levinnyt uusiutuva energiamuoto, joka on leimautunut erityisen ympäristöystävällisenä</li>
+            <li>Mediassa vesivoimasta puhutaan positiiviseen sävyyn, eikä kansalaisilla ole oikeaa informaatiota vesivoimaan liittyen</li>
+            <li>Harva tietää vesivoiman haitoista, ja näkee sen vain puhtaana, ympäristöystävällisenä energiamuotona</li> 
+            <li>Meidän tehtävänämme on edistää ihmisten tietoisuutta vesivoiman hyödyistä ja haitoista</li>
+            <li>Tavoitteenamme on <b>vesivoiman vähentäminen virtaavissa vesistöissä</b> ja <b>vaelluskalakantojen elvyttäminen</b></li>
+          </ul>
         </Modal>
         <Modal className="Modal" overlayClassName="Overlay" isOpen={modal2} onRequestClose={() => this.setState({ modal2: false })}>
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
+          <ul className="longText">
+            <li>Vakavana ongelmana on, että patoja on jo suurimmassa osassa Suomen jokivesistöjä.</li>
+            <li>Padot häiritsevä esteettistä luonnon kauneutta ja estävät vaelluskalojen liikkumista</li>
+            <li>Vesivoiman tuottamiseen rakennettujen patojen seurauksena kalat eivät pääse liikkumaan vapaasti, mikä näkyy rajuna kalakantojen vähenemisenä.</li>
+            <li>Vaelluskaloista äärimmäisen uhanalaisia ovat järvilohi, Saimaan nieriä, meriharjus ja ankeria.</li>
+            <li>Lisäksi erittäin uhanalaisia ovat meritaimen ja vaellussiika ja vaarantuneessa asemassa ovat lohi, planktonsiika ja karisiika. (https://wwf.fi/elainlajit/suomen-uhanalaiset-kalat/).</li>
+            <li>Uhanalaisuus vähentää rajusti kotimaista kalastusta, vaikka kotimaisen kalan ostaminen olisi todella ympäristöystävällistä sekä terveellistä varsinkin verrattuna kasvatettuihin tuontikaloihin.</li>
+            <li>Arvostetun Suomen Kuvalehden artikkelin ”Uhatut eväkkäät” (22.3.2019) mukaan Suomen kalalajeista joka kuudes on uhanalainen, ja artikkelissa mainitaankin syyksi juuri patojen seurauksena rakennetut nousuesteet, jotka estävät jo uhanalaisten kalojen lisääntymisen.</li>
+          </ul>
         </Modal>
         <Modal className="Modal" overlayClassName="Overlay" isOpen={modal3} onRequestClose={() => this.setState({ modal3: false })}>
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
+          <ul className="mediumText">
+            <li>Vesivoima on prosentuaalisesti hyvin pieni osa Suomen energiantuotannosta, mutta sen negatiiviset ympäristövaikutukset ovat sitäkin merkittävämmät.</li>
+            <li>Vesivoiman osuus koko energiantuotannosta Suomessa oli vain noin neljä prosenttia vuonna 2016. Monet energiayhtiöt haluavat nostaa tätä määrää, vaikka se tulisi todella kalliiksi sekä luonnolle että kukkarolle.</li>
+            <li>Samalla Suomen arvokkaan luonnon rauha ja kauneus kärsivät massiivisista rakennushankkeista kuten padoista ja säännöstelyaltaista.</li>
+          </ul>
+        </Modal>
+        <Modal className="Modal" overlayClassName="Overlay" isOpen={modal4} onRequestClose={() => this.setState({ modal4: false })}>
+          <ul className="mediumText">
+            <li><b>Poliittiset päättäjät</b> - lisää rahaa kalojen suojelemiseksi ja vesivoiman tukien vähentäminen</li>
+            <li><b>Suomen kansalaiset</b> - Tietoisuuden lisääminen vesivoiman vaikutuksista ja vaihtoehtoisista ratkaisuista sekä osallistaminen hankkeissa</li>
+            <li><b>Kalastajaliitot</b> - Vastuullisen kalastaminen edistäminen ja uhanalaisten kalojen vapaaksi päästäminen</li>
+            <li><b>Energiayhtiöt</b> - Vastuullisen energiantuotannon edistäminen ja kalateiden rakentaminen patojen kohdille</li>
+          </ul>
         </Modal>
       </CardComponent>
     
