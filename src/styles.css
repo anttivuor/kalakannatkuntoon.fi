@@ -58,27 +58,6 @@ body {
   margin-top: 100px;
 }
 
-.presentationText {
-  margin-top: 50px;
-}
-
-@media screen and (max-width: 500px) {
-  .presentationText {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .presentationText {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .presentationText {
-    font-size: 12.5px;
-  }
-}
 
 @media screen and (max-width: 590px) {
   .longText {
@@ -95,6 +74,7 @@ body {
 @media screen and (max-width: 390px) {
   .longText {
     font-size: 11px;
+    margin-top: 0px;
   }
 }
 
@@ -124,8 +104,35 @@ body {
 
 @media screen and (max-width: 410px) {
   .mainList.part {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .mainListElement {
     font-size: smaller;
   }
 }
 
+.presentationText {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .presentationText {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .presentationText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .presentationText {
+    font-size: 12.5px;
+  }
+}
 

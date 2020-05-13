@@ -62,7 +62,7 @@ const Contact = () => {
     >
       <div className={'icon-container'}>
         <div className={'inf'}>
-          <p>Seuraa kampanjaamme myös sosiaalisissa medioissa sekä osallistu keskusteluun <b>#kalakannatkuntoon</b></p>
+          <p>Seuraa kampanjaamme sosiaalisissa medioissa sekä osallistu keskusteluun <b>#kalakannatkuntoon</b></p>
 
           <ul style={{ fontSize: '15px' }}>
             <li>kalakannatkuntoon<br></br> <b>(</b>@gmail.com<b>)</b></li>

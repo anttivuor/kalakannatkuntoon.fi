@@ -71,7 +71,7 @@ class Facts extends Component {
             <li>Padot häiritsevä esteettistä luonnon kauneutta ja estävät vaelluskalojen liikkumista</li>
             <li>Vesivoiman tuottamiseen rakennettujen patojen seurauksena kalat eivät pääse liikkumaan vapaasti, mikä näkyy rajuna kalakantojen vähenemisenä</li>
             <li>Vaelluskaloista äärimmäisen uhanalaisia ovat järvilohi, Saimaan nieriä, meriharjus ja ankerias</li>
-            <li>Lisäksi erittäin uhanalaisia ovat meritaimen ja vaellussiika, sekä vaarantuneessa asemassa ovat lohi, planktonsiika ja karisiika. <a style={{ justifyContent: 'center' }} href={'https://wwf.fi/elainlajit/suomen-uhanalaiset-kalat/'}>(https://wwf.fi/elainlajit/suomen-uhanalaiset-kalat/)</a></li>
+            <li>Erittäin uhanalaisia lajeja ovat meritaimen ja vaellussiika, vaarantuneessa asemassa ovat lohi, planktonsiika ja karisiika. <a style={{ justifyContent: 'center' }} href={'https://wwf.fi/elainlajit/suomen-uhanalaiset-kalat/'}>(https://wwf.fi/elainlajit/suomen-uhanalaiset-kalat/)</a></li>
             <li>Uhanalaisuus vähentää rajusti kotimaista kalastusta; kotimaisen kalan ostaminen olisi todella ympäristöystävällistä sekä terveellistä varsinkin verrattuna kasvatettuihin tuontikaloihin</li>
             <li>Arvostetun Suomen Kuvalehden artikkelin ”Uhatut eväkkäät” (22.3.2019) mukaan Suomen kalalajeista joka kuudes on uhanalainen, ja artikkelissa mainitaankin syyksi juuri patojen seurauksena rakennetut nousuesteet, jotka estävät jo uhanalaisten kalojen lisääntymisen</li>
           </ul>
@@ -80,7 +80,7 @@ class Facts extends Component {
           <ul className={'mediumText'}>
             <li>Vesivoima on prosentuaalisesti hyvin pieni osa Suomen energiantuotannosta, mutta sen negatiiviset ympäristövaikutukset ovat sitäkin merkittävämmät.</li>
             <li>Vesivoiman osuus koko energiantuotannosta Suomessa oli vain noin neljä prosenttia vuonna 2016. Monet energiayhtiöt haluavat nostaa tätä määrää, vaikka se tulisi todella kalliiksi sekä luonnolle että kukkarolle.</li>
-            <li>Samalla Suomen arvokkaan luonnon rauha ja kauneus kärsivät massiivisista rakennushankkeista kuten padoista ja säännöstelyaltaista.</li>
+            <li>Suomen arvokkaan luonnon rauha ja kauneus kärsivät massiivisista rakennushankkeista, kuten padoista ja säännöstelyaltaista.</li>
           </ul>
         </Modal>
         <Modal className={'Modal'} overlayClassName={'Overlay'} isOpen={modal4} onRequestClose={() => this.setState({ modal4: false })}>
